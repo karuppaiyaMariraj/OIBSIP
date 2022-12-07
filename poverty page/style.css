@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("poverty.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: center;
+ 
+}.navbar ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-align: right;
+    
+}  
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(253, 254, 251);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}  
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #09b1a1;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 70px;
+    margin: 80px;
+    color: aqua;
+}
+.content h2{
+     font-size: 30px;
+     margin: 50px;
+     color: #f8fbfb;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 20px;
+    color: rgb(247, 248, 247);
+}
+button{
+    width: 198px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #06fae6;
+    background: transparent;
+    color: rgb(236, 227, 227);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #070b0b;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
