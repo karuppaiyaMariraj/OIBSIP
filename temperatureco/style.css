@@ -1,0 +1,43 @@
+* {
+    box-sizing: content-box;
+}
+body{
+    background-image: url(tempco7.jpg);
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+h2{
+    color:rgb(251, 88, 1);
+    font-display: 29%;
+    padding-inline: 20px;
+    align-items: center;
+}
+.button-tool1{
+    border-radius: 20px;
+    padding:left 18px;
+    background-color: rgb(113, 7, 253);
+    color: rgb(5, 252, 46);
+    font-size: 15px;
+    
+    
+}
+.button-tool2{
+    border-radius: 120px;
+    padding-right:  18px;
+    background-color: rgb(132, 7, 248);
+    color: rgb(6, 249, 55);
+    font-size:15px ;
+
+}
+.button-tool:hover {
+    background-color: rgb(10, 206, 206);
+    color: black;
+}
+.box {
+    width: 35%;
+    height: 32px;
+    border-radius: 15px;
+}
